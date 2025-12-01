@@ -16,6 +16,10 @@ To run the code make sure synthetic_data.py and traffic_simulator.py are in the 
 - Random Forests is a simple approach to predicting traffic and doesn't capture temporal dependencies, however introducing a lag feature of previous traffic has the effect of the Random Forest "remembering" past data.
 - A threshold function is used to determine the congestions queues at each intersection and the traffic lights are changed based on this threshold function.
 
+### Results/Analysis:
+- The Random Forest Regressor performs well as the Training R² = 0.987 and the Test R² = 0.900, this indicates that the modle generalizes well as the predictions on unseen data are still accurate.
+
+
 ### Limitations: 
 - Random Forests is a simple method however it does not model temporal dependencies well and despite the feature engineering implemented, an LSTM might out perform the Random Forest Regressor.
 - The optimization method tends to only increase the throughput by a small percentage, where the average waiting time increases by a larger percentage. More focus should pu placed on improing the throughput metric. Additionally, the there is a time complexity with the optimization alogrithm.
