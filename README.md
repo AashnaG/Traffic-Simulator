@@ -18,6 +18,7 @@ To run the code make sure synthetic_data.py and traffic_simulator.py are in the 
 
 ### Results/Analysis:
 - The Random Forest Regressor performs well as the Training R² = 0.987 and the Test R² = 0.900, this indicates that the modle generalizes well as the predictions on unseen data are still accurate.
+- The Fixed baseline has the same throughput as the optimized model, however it has a longer wait time of ~20%. This is also in the case where the simulation runs for a short period of time.
 
 
 ### Limitations: 
